@@ -1,0 +1,53 @@
+/* Button Styles */
+.btn {
+    padding: 16px 32px;
+    /* Larger touch targets */
+    border-radius: 50px;
+    /* Full pill shape */
+    border: none;
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    /* Eloquent ease */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary {
+    background-color: var(--color-text-primary);
+    color: var(--color-bg-secondary);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-accent-gold);
+    color: var(--color-bg-secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(201, 162, 77, 0.3);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid var(--color-text-primary);
+    color: var(--color-text-primary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-text-primary);
+    color: var(--color-bg-secondary);
+    transform: translateY(-2px);
+}
+
+/* Container */
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+.section {
+    padding: var(--spacing-xl) 0;
+}

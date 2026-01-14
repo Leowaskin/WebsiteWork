@@ -1,0 +1,104 @@
+/* Hero Section */
+.hero-section {
+    min-height: 100vh;
+    /* Full screen impact */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    /* Soft warm glow background */
+    background: radial-gradient(circle at 50% 50%, rgba(233, 150, 122, 0.08) 0%, rgba(250, 247, 242, 0) 60%);
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-headline {
+    font-size: 5rem;
+    /* Massive editorial headline */
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text-primary);
+    font-weight: 800;
+}
+
+.hero-subheadline {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-accent-green);
+    opacity: 1;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.hero-description {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto var(--spacing-lg);
+    line-height: 1.8;
+    color: var(--color-text-secondary);
+}
+
+.hero-actions {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+}
+
+/* Philosophy Section */
+.philosophy-section {
+    background-color: transparent;
+    /* Allow cursor glow to show through */
+    text-align: center;
+    position: relative;
+}
+
+/* Decorative line */
+.philosophy-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 80px;
+    background-color: var(--color-accent-gold);
+    opacity: 0.3;
+}
+
+.philosophy-content h3 {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-accent-gold);
+}
+
+.philosophy-points {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Reduced spacing for typing animation container */
+.philosophy-line {
+    margin-bottom: var(--spacing-sm);
+    /* Reduced from md/lg */
+    min-height: 2em;
+    /* Prevent layout shift */
+}
+
+.philosophy-points p,
+.philosophy-line span {
+    font-size: 1.8rem;
+    line-height: 1.3;
+    /* Tighter line height requested */
+    color: var(--color-text-primary);
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    .hero-headline {
+        font-size: 3rem;
+    }
+}

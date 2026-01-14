@@ -1,0 +1,75 @@
+:root {
+  /* Colors */
+  --color-bg-primary: #FAF7F2;
+  /* Warm off-white */
+  --color-bg-secondary: #FFFFFF;
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #555555;
+  --color-accent-salmon: #E9967A;
+  --color-accent-green: #6B8E6E;
+  --color-accent-gold: #C9A24D;
+
+  /* Additional Premium Tones */
+  --color-stone-beige: #E6E2DD;
+  --color-linen-cream: #F4F1EA;
+
+  /* Fonts */
+  --font-primary: "Nunito", "Arial Rounded MT Bold", sans-serif;
+  --font-display: "Nunito", sans-serif;
+  /* For headlines */
+
+  /* Spacing - Generous for editorial feel */
+  --spacing-sm: 12px;
+  --spacing-md: 24px;
+  --spacing-lg: 48px;
+  --spacing-xl: 96px;
+
+  /* Layout */
+  --max-width: 1400px;
+  /* Wider for cinematic feel */
+  --border-radius: 8px;
+  /* Slightly softer */
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-primary);
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 700;
+  /* Bold but rounded */
+  letter-spacing: -0.02em;
+  /* Tighter for modern look */
+  line-height: 1.2;
+}
+
+p {
+  color: var(--color-text-secondary);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,56 @@
+.what-is-niyyah-section {
+    background-color: transparent;
+    /* Allow cursor glow to show through */
+    padding: var(--spacing-xl) 0;
+}
+
+.niyyah-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.niyyah-card {
+    background-color: rgba(250, 247, 242, 0.7);
+    /* Semi-transparent bg-primary */
+    backdrop-filter: blur(5px);
+    padding: var(--spacing-lg);
+    border-radius: 4px;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Adjust if the section background needs to be different to make cards pop */
+.what-is-niyyah-section {
+    background-color: var(--color-bg-primary);
+    /* Warm background */
+}
+
+.niyyah-card {
+    background-color: var(--color-bg-secondary);
+    /* White cards */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.niyyah-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.niyyah-card-title {
+    color: var(--color-accent-gold);
+    /* Gold color from image */
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+    font-weight: 700;
+}
+
+.niyyah-card-text {
+    color: var(--color-text-primary);
+    /* Or a dark grey */
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}

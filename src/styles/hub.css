@@ -1,0 +1,120 @@
+/* Hub Section */
+.hub-section {
+    background-color: transparent;
+    /* Allow cursor glow to show through */
+    padding-top: var(--spacing-xl);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-text-primary);
+    font-weight: 400;
+    /* Editorial feel */
+}
+
+.hub-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    /* Wider cards */
+    gap: var(--spacing-lg);
+    padding: var(--spacing-md) 0;
+}
+
+/* Hub Block */
+.hub-block {
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Semi-transparent */
+    backdrop-filter: blur(10px);
+    /* Glassmorphism */
+    border-radius: 4px;
+    /* Slightly sharper for premium feel */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    /* Softer shadow */
+}
+
+.hub-block-image-container {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hub-block-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.hub-block:hover .hub-block-image {
+    transform: scale(1.05);
+    /* Gentle zoom */
+}
+
+.hub-block-overlay.locked {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(2px);
+}
+
+.hub-block-content {
+    padding: var(--spacing-lg);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.hub-block-title {
+    font-size: 1.4rem;
+    /* Adjusted for editorial */
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text-primary);
+    font-family: var(--font-primary);
+}
+
+.hub-block-description {
+    font-size: 1rem;
+    color: #666;
+    /* Softer grey */
+    line-height: 1.6;
+    margin-bottom: var(--spacing-md);
+    flex-grow: 1;
+}
+
+/* Status variants */
+.hub-lock-indicator {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: #999;
+    margin-top: auto;
+}
+
+.lock-text {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: auto;
+    align-self: flex-start;
+    background-color: var(--color-accent-gold);
+    color: white;
+}
