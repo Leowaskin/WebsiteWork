@@ -9,7 +9,7 @@ const hubData = [
         status: "locked",
         description: "A purpose-driven soda brand inspired by the legacy of Shaykh Abdul Qadir Jilani.",
         cta: "Click to learn more",
-        image: "/assets/baz_soda_cans_1767794431200.png",
+        image: `${import.meta.env.BASE_URL}assets/baz_soda_cans_1767794431200.png`,
         details: [
             "A specially curated range of soda.",
             "The word ‘Baz’, which translates from Arabic/Kurdish into Falcon/Hawk (birds).",
@@ -22,7 +22,7 @@ const hubData = [
         title: "Manna & Friends",
         status: "locked",
         description: "Ethical chocolate inspired by the gift of Manna. One for you, one donated.",
-        image: "/assets/manna_chocolate_1767794453341.png",
+        image: `${import.meta.env.BASE_URL}assets/manna_chocolate_1767794453341.png`,
         details: [
             "An exciting collaboration of authentic Manna wrapped in truly healthy chocolate.",
             "A gift inspired by the Heavens.",
@@ -37,7 +37,7 @@ const hubData = [
         title: "The Marriage Couch",
         status: "coming_soon",
         description: "Online marriage therapy based on Islamic principles, open to all.",
-        image: "/assets/marriage_couch_1767794472197.png",
+        image: `${import.meta.env.BASE_URL}assets/marriage_couch_1767794472197.png`,
         details: [
             "Your online marriage therapists, coming soon!!!",
             "Based on Islamic Principles, Open to All!",
@@ -50,7 +50,7 @@ const hubData = [
         title: "Niyyah: Wear Your Intention",
         status: "live",
         description: "A clothing brand for like-hearted individuals to find their people.",
-        image: "/assets/niyyah_wear_1767794490246.png",
+        image: `${import.meta.env.BASE_URL}assets/niyyah_wear_1767794490246.png`,
         details: [
             "NIYYAH: Wear Your Intention",
             "1) Make Your Intention",
@@ -65,7 +65,7 @@ const hubData = [
         title: "NIYYAH X Frankincense",
         status: "live",
         description: "Frankincense honey and loban inspired by Omani heritage and Sunnah.",
-        image: "/assets/frankincense_set_1767794504182.png",
+        image: `${import.meta.env.BASE_URL}assets/frankincense_set_1767794504182.png`,
         details: [
             "A dedication to the historical Frankincense trees of Oman.",
             "Frankincense holds immense cultural significance in Oman. It has been an integral part of Omani culture, tradition, and religious practices.",
@@ -81,7 +81,7 @@ const hubData = [
         title: "NIYYAH X Rose Otto",
         status: "live",
         description: "Rare Rose Otto oil, summarised poetically and visually.",
-        image: "/assets/rose_otto_oil_1767794520486.png",
+        image: `${import.meta.env.BASE_URL}assets/rose_otto_oil_1767794520486.png`,
         details: [
             "Often referred to as the 'liquid gold' of essential oils, derived from the petals of the renowned Damask rose.",
             "A labor of love: It takes approximately 10,000 pounds of handpicked petals, harvested in the early morning, to produce just one pound of this precious oil.",
@@ -93,7 +93,7 @@ const hubData = [
         title: "Amama by NIYYAH",
         status: "live",
         description: "A modern Turkish Amama inspired by the Sunnah.",
-        image: "/assets/amama_turban_1767794538992.png",
+        image: `${import.meta.env.BASE_URL}assets/amama_turban_1767794538992.png`,
         details: [
             "The Amama (Islamic turban) is a symbol of honor, knowledge, spirituality, and adherence to the Sunnah* of the beloved Prophet Muhammad (peace and blessings be upon him).",
             "Wearing this headgear symbolizes authority, honor and strength.",
