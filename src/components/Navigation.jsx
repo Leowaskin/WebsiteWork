@@ -23,7 +23,7 @@ const Navigation = () => {
                 <div className="logo">NIYYAH</div>
                 <ul className="nav-links">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#hub">The Hub</a></li>
+                    <li><a href="#hub">The Collective</a></li>
                     <li><a href="#philosophy">Our NIYYAH</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>

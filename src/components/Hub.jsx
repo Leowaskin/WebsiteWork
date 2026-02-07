@@ -121,7 +121,7 @@ const Hub = () => {
         <section className="section hub-section" id="hub">
             <div className="container">
                 <Reveal width="100%">
-                    <h2 className="section-title">The Hub</h2>
+                    <h2 className="section-title">The NIYYAH Collective</h2>
                 </Reveal>
                 <div className="hub-grid">
                     {hubData.map((block, index) => (
